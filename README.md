@@ -242,10 +242,10 @@ Abrir en navegador: `http://localhost:8081/palestine_war_crimes_dashboard_optimi
 ## 📞 **CONTACTO Y COMUNIDAD**
 
 ### **Canales de Soporte**
-- 📧 **Email**: centinela.gamma.support@protonmail.com
-- 💬 **Discord**: [Servidor CENTINELA-GAMMA](https://discord.gg/centinela)
-- 📱 **Telegram**: @CentinelaGammaSupport
-- 🐦 **Twitter**: @CentinelaGamma
+- 📧 **Email**: ****
+- 💬 **Discord**: +++++
+- 📱 **Telegram**: @+++++
+- 🐦 **Twitter**: @++++++++
 
 ### **Para Emergencias**
 Si encuentras evidencia de crímenes de guerra inmediatos:
