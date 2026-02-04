@@ -1,0 +1,202 @@
+{
+  "organization_config": {
+    "organization_info": {
+      "name": "Human Rights Documentation Organization",
+      "type": "NGO",
+      "location": "International",
+      "contact": "contact@organization.org",
+      "website": "https://www.organization.org",
+      "established": "2024",
+      "mission": "Document and report human rights violations using AI-powered social media analysis"
+    },
+    
+    "centinela_gamma_config": {
+      "version": "1.0",
+      "deployment_mode": "production",
+      "monitoring_regions": ["Palestine", "Gaza", "West Bank", "East Jerusalem"],
+      "languages": ["en", "ar", "es", "fr"],
+      "update_frequency": "real-time",
+      "data_retention": "indefinite",
+      "backup_enabled": true
+    },
+    
+    "api_configuration": {
+      "twitter_api": {
+        "bearer_token": "YOUR_TWITTER_BEARER_TOKEN_HERE",
+        "rate_limit_handling": "adaptive",
+        "max_requests_per_minute": 300,
+        "retry_logic": true,
+        "timeout_seconds": 30
+      },
+      
+      "data_processing": {
+        "real_time_processing": true,
+        "batch_processing": true,
+        "batch_size": 100,
+        "processing_threads": 4,
+        "memory_limit_mb": 2048
+      }
+    },
+    
+    "dashboard_settings": {
+      "public_access": false,
+      "authentication_required": true,
+      "allowed_users": [
+        "admin@organization.org",
+        "analyst1@organization.org", 
+        "researcher@organization.org"
+      ],
+      "auto_refresh_interval": 300,
+      "export_formats": ["json", "csv", "pdf"],
+      "language_interface": "en"
+    },
+    
+    "data_storage": {
+      "database_type": "sqlite",
+      "database_path": "data/war_crimes_documentation.db",
+      "backup_schedule": "daily",
+      "backup_location": "backups/",
+      "encryption_enabled": true,
+      "compression_enabled": true
+    },
+    
+    "analysis_parameters": {
+      "relevance_threshold": 0.7,
+      "confidence_threshold": 0.8,
+      "geographic_filtering": true,
+      "time_range_default": "last_7_days",
+      "duplicate_detection": true,
+      "sentiment_analysis": false,
+      "automated_classification": true
+    },
+    
+    "alerting_system": {
+      "enabled": true,
+      "alert_types": [
+        "mass_casualties",
+        "infrastructure_attacks",
+        "new_war_crimes",
+        "escalation_patterns"
+      ],
+      "notification_methods": ["email", "webhook"],
+      "notification_emails": [
+        "alerts@organization.org",
+        "director@organization.org"
+      ],
+      "webhook_url": "https://api.organization.org/alerts",
+      "alert_frequency_limit": "max_1_per_hour_per_type"
+    },
+    
+    "reporting_configuration": {
+      "automated_reports": true,
+      "report_frequency": "weekly",
+      "report_recipients": [
+        "reports@organization.org",
+        "legal@organization.org",
+        "media@organization.org"
+      ],
+      "report_formats": ["html", "pdf"],
+      "include_statistics": true,
+      "include_evidence_links": true,
+      "include_legal_analysis": true
+    },
+    
+    "legal_compliance": {
+      "jurisdiction": "international",
+      "applicable_laws": [
+        "Geneva Conventions",
+        "Rome Statute",
+        "International Human Rights Law",
+        "GDPR (where applicable)"
+      ],
+      "evidence_standards": "international_criminal_court",
+      "chain_of_custody": true,
+      "metadata_preservation": true,
+      "source_protection": "maximum"
+    },
+    
+    "security_settings": {
+      "ssl_enabled": true,
+      "access_logging": true,
+      "failed_login_protection": true,
+      "session_timeout_minutes": 60,
+      "password_policy": "strong",
+      "two_factor_authentication": "recommended",
+      "audit_trail": true
+    },
+    
+    "integration_apis": {
+      "external_databases": [],
+      "legal_case_management": null,
+      "media_partnerships": [],
+      "academic_institutions": [],
+      "other_monitoring_systems": []
+    },
+    
+    "performance_optimization": {
+      "caching_enabled": true,
+      "cache_ttl_seconds": 300,
+      "database_indexing": "optimized",
+      "query_optimization": true,
+      "parallel_processing": true,
+      "memory_management": "aggressive"
+    },
+    
+    "monitoring_and_logging": {
+      "system_monitoring": true,
+      "performance_monitoring": true,
+      "error_logging": true,
+      "access_logging": true,
+      "log_retention_days": 365,
+      "log_level": "INFO",
+      "metrics_collection": true
+    },
+    
+    "backup_and_recovery": {
+      "backup_frequency": "daily",
+      "backup_retention_days": 90,
+      "disaster_recovery_plan": true,
+      "offsite_backups": true,
+      "recovery_testing": "monthly",
+      "backup_encryption": true
+    },
+    
+    "customization_options": {
+      "custom_queries": true,
+      "custom_dashboards": true,
+      "custom_reports": true,
+      "custom_alerts": true,
+      "custom_analysis_algorithms": false,
+      "white_label_branding": false
+    },
+    
+    "deployment_notes": {
+      "recommended_setup": "Docker container with persistent volumes",
+      "minimum_requirements": {
+        "cpu_cores": 2,
+        "ram_gb": 4,
+        "storage_gb": 50,
+        "network": "stable internet connection"
+      },
+      "optimal_requirements": {
+        "cpu_cores": 4,
+        "ram_gb": 8,
+        "storage_gb": 200,
+        "network": "high-speed internet connection"
+      },
+      "scaling_options": "Horizontal scaling supported",
+      "maintenance_window": "Weekly, 2-hour maximum",
+      "support_contact": "support@centinela-gamma.org"
+    },
+    
+    "training_and_onboarding": {
+      "training_required": true,
+      "training_duration": "2 days",
+      "training_materials": "included",
+      "ongoing_support": "available",
+      "user_manual": "comprehensive",
+      "video_tutorials": "available",
+      "community_support": "forum_access"
+    }
+  }
+}

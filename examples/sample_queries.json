@@ -1,0 +1,239 @@
+{
+  "centinela_gamma_queries": {
+    "version": "1.0",
+    "description": "Consultas especializadas para documentación de crímenes de guerra",
+    "last_updated": "2026-02-04",
+    "total_queries": 39,
+    
+    "query_categories": {
+      "civilian_casualties": {
+        "description": "Víctimas civiles y bajas no combatientes",
+        "priority": "CRITICAL",
+        "queries": [
+          "Palestine civilians killed OR Gaza civilians killed OR \"West Bank\" civilians killed",
+          "\"children killed\" (Palestine OR Gaza OR \"West Bank\")",
+          "\"family killed\" (Israel OR Palestine OR Gaza)",
+          "\"innocent victims\" (Gaza OR Palestine OR \"West Bank\")",
+          "\"civilian casualties\" (Gaza OR Palestine OR Israel OR \"West Bank\")",
+          "\"women killed\" (Palestine OR Gaza OR \"West Bank\")",
+          "\"elderly killed\" (Palestine OR Gaza OR \"West Bank\")"
+        ]
+      },
+      
+      "infrastructure_attacks": {
+        "description": "Ataques a infraestructura civil protegida",
+        "priority": "CRITICAL", 
+        "queries": [
+          "\"hospital bombed\" (Gaza OR Palestine OR \"West Bank\")",
+          "\"school destroyed\" (Gaza OR Palestine OR \"West Bank\")",
+          "\"mosque bombed\" OR \"mosque attacked\" (Gaza OR Palestine)",
+          "\"church bombed\" (Palestine OR Gaza OR \"West Bank\")",
+          "\"medical facility\" (bombed OR attacked OR destroyed) (Gaza OR Palestine)",
+          "\"ambulance\" (targeted OR attacked OR hit) (Gaza OR Palestine)",
+          "\"power plant\" (bombed OR destroyed) (Gaza OR Palestine)"
+        ]
+      },
+      
+      "military_operations": {
+        "description": "Operaciones militares y uso de fuerza",
+        "priority": "HIGH",
+        "queries": [
+          "Gaza airstrike OR \"West Bank\" airstrike OR Palestine airstrike", 
+          "IDF operation (Gaza OR \"West Bank\" OR Palestine)",
+          "\"Israeli forces\" (Gaza OR \"West Bank\" OR Palestine)",
+          "bombing (Gaza OR Palestine OR \"West Bank\")",
+          "shelling (Gaza OR Palestine OR \"West Bank\")",
+          "\"military operation\" (Gaza OR Palestine OR \"West Bank\")",
+          "drone strike (Gaza OR Palestine OR \"West Bank\")"
+        ]
+      },
+      
+      "settlement_activities": {
+        "description": "Actividades de asentamientos y expansión",
+        "priority": "HIGH",
+        "queries": [
+          "\"illegal settlement\" (Palestine OR \"West Bank\" OR \"East Jerusalem\")",
+          "\"home demolition\" (Palestine OR \"West Bank\" OR \"East Jerusalem\")", 
+          "\"forced eviction\" (Palestine OR \"West Bank\" OR \"East Jerusalem\")",
+          "\"settlement expansion\" (Palestine OR \"West Bank\")",
+          "\"settlers attack\" (Palestine OR \"West Bank\")",
+          "\"land confiscation\" (Palestine OR \"West Bank\")"
+        ]
+      },
+      
+      "humanitarian_crisis": {
+        "description": "Crisis humanitaria y restricciones",
+        "priority": "HIGH",
+        "queries": [
+          "Gaza siege OR Gaza blockade",
+          "\"humanitarian crisis\" (Gaza OR Palestine OR \"West Bank\")",
+          "\"collective punishment\" (Gaza OR Palestine OR \"West Bank\")",
+          "\"access denied\" (Gaza OR Palestine OR \"West Bank\")",
+          "\"medical supplies blocked\" (Gaza OR Palestine)",
+          "\"food shortage\" (Gaza OR Palestine)",
+          "\"water crisis\" (Gaza OR Palestine)"
+        ]
+      },
+      
+      "legal_violations": {
+        "description": "Violaciones específicas del derecho internacional",
+        "priority": "CRITICAL",
+        "queries": [
+          "\"war crime\" (Palestine OR Gaza OR Israel OR \"West Bank\")",
+          "\"Geneva Convention\" (Palestine OR Gaza OR Israel)",
+          "\"crimes against humanity\" (Palestine OR Gaza OR Israel)",
+          "\"ethnic cleansing\" (Palestine OR Gaza OR \"West Bank\")",
+          "genocide (Palestine OR Gaza OR Israel)",
+          "\"international law\" violation (Palestine OR Gaza OR Israel)",
+          "apartheid (Palestine OR Gaza OR Israel)"
+        ]
+      },
+      
+      "detention_arrests": {
+        "description": "Detenciones y arrestos",
+        "priority": "MEDIUM",
+        "queries": [
+          "\"Palestinian arrested\" OR \"Palestinians arrested\"",
+          "\"administrative detention\" Palestine",
+          "\"mass arrests\" (Palestine OR \"West Bank\")",
+          "\"child arrested\" (Palestine OR \"West Bank\")",
+          "\"journalist arrested\" (Palestine OR \"West Bank\")",
+          "\"arbitrary detention\" Palestine"
+        ]
+      }
+    },
+    
+    "geographic_filters": {
+      "gaza": ["Gaza", "غزة", "Gazans", "Gaza Strip"],
+      "west_bank": ["West Bank", "Ramallah", "Jenin", "Nablus", "Hebron", "Bethlehem"],
+      "east_jerusalem": ["East Jerusalem", "Sheikh Jarrah", "Silwan", "Al-Aqsa"],
+      "general_palestine": ["Palestine", "Palestinian", "Palestinians", "فلسطين"]
+    },
+    
+    "language_codes": {
+      "english": "en",
+      "arabic": "ar", 
+      "spanish": "es",
+      "french": "fr",
+      "hebrew": "he"
+    },
+    
+    "critical_keywords": {
+      "violence": ["killed", "dead", "murdered", "executed", "shot"],
+      "weapons": ["airstrike", "bombing", "shelling", "drone strike", "missile"],
+      "victims": ["children", "civilians", "family", "women", "elderly", "journalists"],
+      "infrastructure": ["hospital", "school", "mosque", "church", "home", "clinic"],
+      "legal": ["war crime", "genocide", "ethnic cleansing", "crimes against humanity"],
+      "humanitarian": ["siege", "blockade", "collective punishment", "humanitarian crisis"]
+    },
+    
+    "exclusion_terms": {
+      "description": "Términos para filtrar contenido irrelevante",
+      "terms": ["spam", "fake", "rumor", "unconfirmed", "alleged without source"]
+    },
+    
+    "time_ranges": {
+      "real_time": "recent tweets (last 24 hours)",
+      "weekly": "last 7 days", 
+      "monthly": "last 30 days",
+      "quarterly": "last 90 days",
+      "custom": "user-defined range"
+    },
+    
+    "search_operators": {
+      "exact_phrase": "\"exact phrase\"",
+      "any_word": "word1 OR word2", 
+      "all_words": "word1 word2",
+      "exclude_word": "search -excludeword",
+      "hashtag": "#hashtag",
+      "mention": "@username",
+      "from_user": "from:username",
+      "to_user": "to:username",
+      "near_location": "near:\"city\" within:15mi"
+    },
+    
+    "relevance_scoring": {
+      "critical_indicators": {
+        "killed": 40,
+        "children killed": 45,
+        "hospital bombed": 45,
+        "war crime": 40,
+        "genocide": 45
+      },
+      "high_indicators": {
+        "bombing": 30,
+        "airstrike": 30,
+        "civilians": 25,
+        "settlement": 20,
+        "arrest": 15
+      },
+      "context_multipliers": {
+        "verified_source": 1.2,
+        "eyewitness_account": 1.3,
+        "media_report": 1.1,
+        "official_statement": 1.4,
+        "human_rights_org": 1.5
+      }
+    },
+    
+    "usage_examples": {
+      "basic_search": {
+        "query": "Gaza civilians killed",
+        "description": "Búsqueda básica de víctimas civiles en Gaza",
+        "expected_results": "Tweets sobre víctimas civiles en Gaza"
+      },
+      "advanced_search": {
+        "query": "(\"hospital bombed\" OR \"medical facility attacked\") (Gaza OR Palestine) -rumor",
+        "description": "Búsqueda avanzada de ataques a infraestructura médica",
+        "expected_results": "Tweets verificados sobre ataques a hospitales"
+      },
+      "legal_focus": {
+        "query": "\"war crime\" (Palestine OR Gaza OR Israel) from:verified_account",
+        "description": "Búsqueda de crímenes de guerra desde cuentas verificadas", 
+        "expected_results": "Reportes oficiales de violaciones legales"
+      }
+    },
+    
+    "api_parameters": {
+      "max_results": 100,
+      "tweet_fields": "created_at,author_id,context_annotations,conversation_id,public_metrics,referenced_tweets,reply_settings,source,lang,possibly_sensitive",
+      "user_fields": "created_at,description,entities,id,location,name,pinned_tweet_id,profile_image_url,protected,public_metrics,url,username,verified,withheld",
+      "media_fields": "duration_ms,height,media_key,preview_image_url,type,url,width,public_metrics,alt_text,variants",
+      "place_fields": "contained_within,country,country_code,full_name,geo,id,name,place_type",
+      "poll_fields": "duration_minutes,end_datetime,id,options,voting_status"
+    },
+    
+    "best_practices": {
+      "query_construction": [
+        "Use comillas para frases exactas",
+        "Combina términos con OR para mayor cobertura",
+        "Excluye spam con términos negativos (-)",
+        "Incluye variaciones en diferentes idiomas",
+        "Usa geolocalización cuando sea relevante"
+      ],
+      "data_quality": [
+        "Prioriza cuentas verificadas cuando sea posible",
+        "Verifica timestamps para eventos actuales", 
+        "Cross-referencia con múltiples fuentes",
+        "Identifica y marca posible desinformación",
+        "Preserva contexto original de tweets"
+      ],
+      "ethical_considerations": [
+        "Respeta la privacidad de víctimas",
+        "No amplifica contenido traumático innecesariamente",
+        "Verifica antes de compartir información sensible",
+        "Mantén objetividad en documentación",
+        "Protege la identidad de fuentes vulnerables"
+      ]
+    },
+    
+    "metadata": {
+      "creator": "CENTINELA-GAMMA Project",
+      "purpose": "War crimes documentation and human rights monitoring",
+      "compliance": "Geneva Conventions, Rome Statute, International Human Rights Law",
+      "update_frequency": "Monthly or as needed",
+      "validation_required": true,
+      "ethical_review": "Required before implementation"
+    }
+  }
+}
