@@ -47,17 +47,27 @@ class PalestineTweetsProcessor:
             # Procesar datos
             processed_data = self.extract_essential_metrics(original_data)
             
-            # Guardar archivo procesado
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            output_file = f"palestine_metrics_processed_{timestamp}.json"
+            # Guardar archivo procesado (versión estática para dashboard)
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(script_dir)
+            output_file = os.path.join(project_root, "dashboard", "data.json")
+            
+            # Asegurar que el directorio existe
+            os.makedirs(os.path.dirname(output_file), exist_ok=True)
             
             with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(processed_data, f, indent=2, ensure_ascii=False)
+            
+            # También guardar una versión con timestamp para histórico (opcional)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            history_file = f"palestine_metrics_processed_{timestamp}.json"
+            with open(history_file, 'w', encoding='utf-8') as f:
                 json.dump(processed_data, f, indent=2, ensure_ascii=False)
             
             output_size_mb = os.path.getsize(output_file) / (1024 * 1024)
             reduction = ((file_size_mb - output_size_mb) / file_size_mb) * 100
             
-            print(f"💾 Archivo procesado: {output_file}")
+            print(f"💾 Archivo estático generado: {output_file}")
             print(f"📊 Tamaño procesado: {output_size_mb:.2f} MB")
             print(f"🎯 Reducción: {reduction:.1f}%")
             

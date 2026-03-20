@@ -1,0 +1,449 @@
+{
+  "metadata": {
+    "processing_timestamp": "2026-03-20T11:23:26.306855",
+    "original_file_size_mb": 26.91914176940918,
+    "original_tweets_count": 50000,
+    "processing_version": "1.0",
+    "source": "CENTINELA-GAMMA"
+  },
+  "basic_metrics": {
+    "total_tweets": 50000,
+    "critical_tweets": 42709,
+    "critical_percentage": 85.42,
+    "unique_authors": 2000,
+    "avg_tweets_per_author": 25.0,
+    "avg_relevance_score": 79.5,
+    "high_relevance_count": 23750,
+    "total_retweets": 2475000,
+    "total_likes": 12475000,
+    "avg_engagement": 299.0,
+    "extraction_info": {
+      "timestamp": "2026-03-20T11:23:24.284691",
+      "total_tweets": 50000,
+      "budget_used": 0.05,
+      "budget_allocated": 2.0,
+      "requests_made": 0,
+      "max_requests": 2000,
+      "cost_per_tweet": 1e-06,
+      "extraction_duration": "0:00:00.744007",
+      "tweets_per_dollar": 1000000.0000000001,
+      "target_region": "Palestine/Israel"
+    },
+    "war_crimes_indicators": {
+      "civilian_casualties": 6250,
+      "infrastructure_attacks": 625,
+      "settlement_activities": 4167,
+      "humanitarian_violations": 4167
+    }
+  },
+  "bot_analysis": {
+    "bot_probability_percentage": 25,
+    "confidence_level": "LOW",
+    "indicators": [
+      "Contenido repetitivo: 93.8%"
+    ],
+    "suspicious_patterns": {
+      "high_volume_authors": 0,
+      "repeated_content": 1875,
+      "timing_clusters": 0,
+      "low_engagement_spam": 4
+    },
+    "total_authors_analyzed": 2000,
+    "content_similarity_samples": {
+      "user_1": 0.04,
+      "user_2": 0.04,
+      "user_3": 0.04,
+      "user_4": 0.04,
+      "user_5": 0.04
+    },
+    "recommendations": [
+      "RIESGO BAJO: Mantener monitoreo regular",
+      "Continuar análisis de tendencias",
+      "Documentar patrones para referencia futura"
+    ],
+    "analysis_details": {
+      "avg_tweets_per_author": 25.0,
+      "high_volume_authors": 0,
+      "repeated_content_authors": 1875,
+      "spam_like_authors": 4
+    }
+  },
+  "keywords_analysis": {
+    "top_keywords": {
+      "killed": 6250,
+      "Israeli forces": 6250,
+      "home demolition": 4167,
+      "civilians killed": 3125,
+      "airstrike": 3125,
+      "missile": 3125,
+      "settlers attack": 3125,
+      "IDF": 3125,
+      "bulldozer": 3125,
+      "war crime": 3125,
+      "siege": 3125,
+      "clean water": 3125,
+      "medical supplies": 3125,
+      "collective punishment": 1042,
+      "school destroyed": 625
+    },
+    "total_keywords_detected": 49584,
+    "unique_keywords": 15,
+    "categorized_keywords": {
+      "violencia": {
+        "killed": 6250,
+        "airstrike": 3125
+      },
+      "victimas": {
+        "civilians killed": 3125
+      },
+      "infraestructura": {
+        "school destroyed": 625,
+        "home demolition": 4167
+      },
+      "militar": {
+        "IDF": 3125,
+        "Israeli forces": 6250
+      },
+      "legal": {
+        "war crime": 3125
+      },
+      "humanitario": {
+        "siege": 3125,
+        "collective punishment": 1042
+      }
+    },
+    "critical_indicators": {
+      "violence_mentions": 9375,
+      "victim_mentions": 3125,
+      "war_crimes_mentions": 3125
+    }
+  },
+  "temporal_analysis": {
+    "hourly_distribution": {
+      "11": 2084,
+      "10": 2084,
+      "9": 2084,
+      "8": 2084,
+      "7": 2084,
+      "6": 2084,
+      "5": 2084,
+      "4": 2084,
+      "3": 2083,
+      "2": 2083,
+      "1": 2083,
+      "0": 2083,
+      "23": 2083,
+      "22": 2083,
+      "21": 2083,
+      "20": 2083,
+      "19": 2083,
+      "18": 2083,
+      "17": 2083,
+      "16": 2083,
+      "15": 2083,
+      "14": 2083,
+      "13": 2083,
+      "12": 2083
+    },
+    "daily_distribution": {
+      "2026-03-20": 8340,
+      "2026-03-19": 16676,
+      "2026-03-18": 16656,
+      "2026-03-17": 8328
+    },
+    "peak_hours": [
+      "11:00 (2084 tweets)",
+      "10:00 (2084 tweets)",
+      "09:00 (2084 tweets)"
+    ],
+    "peak_days": [
+      "2026-03-19 (16676 tweets)",
+      "2026-03-18 (16656 tweets)",
+      "2026-03-20 (8340 tweets)"
+    ],
+    "total_time_span_days": 4
+  },
+  "geographic_analysis": {
+    "top_locations": {
+      "Gaza City": 3847,
+      "Khan Younis": 3847,
+      "Rafah": 3846,
+      "Jabalia": 3846,
+      "Beit Hanoun": 3846,
+      "Ramallah": 3846,
+      "Jenin": 3846,
+      "Nablus": 3846,
+      "Hebron": 3846,
+      "Bethlehem": 3846
+    },
+    "regional_distribution": {
+      "Gaza": 3847,
+      "West Bank": 15384,
+      "East Jerusalem": 3846,
+      "Other": 26923
+    },
+    "total_locations": 13,
+    "most_affected_region": "Other"
+  },
+  "war_crimes_analysis": {
+    "indicators": {
+      "civilian_casualties": 6250,
+      "infrastructure_attacks": 3125,
+      "settlement_activities": 7292,
+      "humanitarian_violations": 4167,
+      "children_casualties": 3125,
+      "medical_attacks": 1250,
+      "education_attacks": 625,
+      "religious_site_attacks": 625
+    },
+    "total_violations": 26459,
+    "severity_score": 100,
+    "severity_level": "EXTREME",
+    "violations_per_thousand_tweets": 529.18
+  },
+  "representative_examples": {
+    "most_critical": [
+      {
+        "text": "Medical supplies blocked at Israeli checkpoints while patients die in Gaza hospitals.",
+        "location": "Khan Younis",
+        "relevance_score": 99,
+        "is_critical": true,
+        "keywords": [
+          "medical supplies"
+        ],
+        "engagement": {
+          "retweets": 79,
+          "likes": 79
+        }
+      },
+      {
+        "text": "Medical supplies blocked at Israeli checkpoints while patients die in Gaza hospitals.",
+        "location": "Jabalia",
+        "relevance_score": 99,
+        "is_critical": true,
+        "keywords": [
+          "medical supplies"
+        ],
+        "engagement": {
+          "retweets": 59,
+          "likes": 159
+        }
+      },
+      {
+        "text": "Medical supplies blocked at Israeli checkpoints while patients die in Gaza hospitals.",
+        "location": "Ramallah",
+        "relevance_score": 99,
+        "is_critical": true,
+        "keywords": [
+          "medical supplies"
+        ],
+        "engagement": {
+          "retweets": 39,
+          "likes": 239
+        }
+      },
+      {
+        "text": "Medical supplies blocked at Israeli checkpoints while patients die in Gaza hospitals.",
+        "location": "Nablus",
+        "relevance_score": 99,
+        "is_critical": true,
+        "keywords": [
+          "medical supplies"
+        ],
+        "engagement": {
+          "retweets": 19,
+          "likes": 319
+        }
+      },
+      {
+        "text": "Medical supplies blocked at Israeli checkpoints while patients die in Gaza hospitals.",
+        "location": "Bethlehem",
+        "relevance_score": 99,
+        "is_critical": true,
+        "keywords": [
+          "medical supplies"
+        ],
+        "engagement": {
+          "retweets": 99,
+          "likes": 399
+        }
+      }
+    ],
+    "civilian_casualties": [
+      {
+        "text": "BREAKING: Israeli forces bomb Gaza City in Gaza. 1 civilians killed including 1 children.",
+        "location": "Gaza City",
+        "relevance_score": 60,
+        "is_critical": true,
+        "keywords": [
+          "killed",
+          "civilians killed",
+          "Israeli forces"
+        ],
+        "engagement": {
+          "retweets": 0,
+          "likes": 0
+        }
+      },
+      {
+        "text": "BREAKING: Israeli forces bomb Jabalia in Gaza. 2 civilians killed including 1 children.",
+        "location": "Jabalia",
+        "relevance_score": 76,
+        "is_critical": true,
+        "keywords": [
+          "killed",
+          "civilians killed",
+          "Israeli forces"
+        ],
+        "engagement": {
+          "retweets": 16,
+          "likes": 16
+        }
+      },
+      {
+        "text": "BREAKING: Israeli forces bomb Jenin in Gaza. 3 civilians killed including 1 children.",
+        "location": "Jenin",
+        "relevance_score": 92,
+        "is_critical": true,
+        "keywords": [
+          "killed",
+          "civilians killed",
+          "Israeli forces"
+        ],
+        "engagement": {
+          "retweets": 32,
+          "likes": 32
+        }
+      }
+    ],
+    "infrastructure_attacks": [
+      {
+        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
+        "location": "Nablus",
+        "relevance_score": 93,
+        "is_critical": true,
+        "keywords": [
+          "airstrike",
+          "school destroyed"
+        ],
+        "engagement": {
+          "retweets": 33,
+          "likes": 33
+        }
+      },
+      {
+        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
+        "location": "Bethlehem",
+        "relevance_score": 93,
+        "is_critical": true,
+        "keywords": [
+          "airstrike",
+          "school destroyed"
+        ],
+        "engagement": {
+          "retweets": 13,
+          "likes": 113
+        }
+      },
+      {
+        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
+        "location": "Silwan",
+        "relevance_score": 93,
+        "is_critical": true,
+        "keywords": [
+          "airstrike",
+          "school destroyed"
+        ],
+        "engagement": {
+          "retweets": 93,
+          "likes": 193
+        }
+      }
+    ],
+    "war_crimes": [
+      {
+        "text": "War crime alert: Israel targets hospital in violation of international law.",
+        "location": "Hebron",
+        "relevance_score": 68,
+        "is_critical": true,
+        "keywords": [
+          "war crime"
+        ],
+        "engagement": {
+          "retweets": 8,
+          "likes": 8
+        }
+      },
+      {
+        "text": "War crime alert: Israel targets hospital in violation of international law.",
+        "location": "Silwan",
+        "relevance_score": 84,
+        "is_critical": true,
+        "keywords": [
+          "war crime"
+        ],
+        "engagement": {
+          "retweets": 24,
+          "likes": 24
+        }
+      },
+      {
+        "text": "War crime alert: Israel targets hospital in violation of international law.",
+        "location": "Khan Younis",
+        "relevance_score": 60,
+        "is_critical": true,
+        "keywords": [
+          "war crime"
+        ],
+        "engagement": {
+          "retweets": 40,
+          "likes": 40
+        }
+      }
+    ],
+    "high_engagement": [
+      {
+        "text": "Gaza medics report 25 killed, 54 wounded in latest Israeli bombardment of Ramallah.",
+        "location": "Ramallah",
+        "relevance_score": 79,
+        "is_critical": true,
+        "keywords": [
+          "killed"
+        ],
+        "engagement": {
+          "retweets": 99,
+          "likes": 499
+        }
+      },
+      {
+        "text": "Checkpoint violence: Israeli soldiers shoot Palestinian youth at Checkpoint 10.",
+        "location": "Silwan",
+        "relevance_score": 99,
+        "is_critical": false,
+        "keywords": [],
+        "engagement": {
+          "retweets": 99,
+          "likes": 499
+        }
+      },
+      {
+        "text": "Amnesty International calls for investigation into Israeli collective punishment.",
+        "location": "Beit Hanoun",
+        "relevance_score": 79,
+        "is_critical": true,
+        "keywords": [
+          "collective punishment"
+        ],
+        "engagement": {
+          "retweets": 99,
+          "likes": 499
+        }
+      }
+    ]
+  },
+  "dashboard_config": {
+    "update_interval": 60000,
+    "max_incidents_display": 8,
+    "max_keywords_display": 10
+  }
+}

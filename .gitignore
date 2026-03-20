@@ -1,0 +1,16 @@
+# Raw Data (Massive files)
+centinela_gamma_tweets_maximized_*.json
+palestine_metrics_processed_*.json
+doom_resource_manager_data.json
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
