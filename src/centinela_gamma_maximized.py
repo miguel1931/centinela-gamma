@@ -161,11 +161,24 @@ class CentinelaGammaMaximized:
             time.sleep(1) # Rate limiting
             return tweets
         except tweepy.errors.TweepyException as e:
-            print(f"❌ Error en query '{query}': {e}")
             status_code = e.response.status_code if e.response is not None else None
-            if status_code in (403, 429): # 403 Forbidden (Billing Cap), 429 Too Many Requests (Rate Limit)
-                print("⚠️ API Limit or Billing Cap Reached. Switching to massive simulation fallback for remaining queries.")
+            print(f"❌ Error en query '{query}': {status_code} - {e}")
+            
+            if status_code == 403:
+                print("⚠️ [HTTP 403] Forbidden. Múltiples causas posibles:")
+                print("   - Límite de facturación (Pay-Per-Use cap) alcanzado.")
+                print("   - El endpoint 'search_recent_tweets' requiere un nivel superior (ej. Pro/Enterprise) o acceso elevado.")
+                print("   - El Bearer Token introducido es incorrecto o no tiene permisos de lectura.")
+                print("⏳ Cambiando a simulación masiva para no perder datos del dashboard...")
                 return "RATE_LIMIT_REACHED"
+            elif status_code == 429:
+                print("⚠️ [HTTP 429] Too Many Requests. Límite de velocidad (Rate Limit) alcanzado.")
+                print("⏳ Cambiando a simulación masiva...")
+                return "RATE_LIMIT_REACHED"
+            elif status_code == 401:
+                print("❌ [HTTP 401] Unauthorized. El TWITTER_BEARER_TOKEN es inválido o ha expirado.")
+                return "RATE_LIMIT_REACHED"
+                
             return None
         except Exception as e:
             print(f"❌ Error inesperado en query '{query}': {e}")
