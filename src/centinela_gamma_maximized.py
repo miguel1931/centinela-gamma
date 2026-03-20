@@ -143,51 +143,85 @@ class CentinelaGammaMaximized:
         print(f"   📝 Queries configuradas: {len(self.queries)}")
         print(f"   🎯 Región objetivo: {self.target_region}")
 
+    def make_request(self, query: str) -> Any:
+        """
+        Realiza una solicitud a la API de Twitter y maneja errores.
+        Retorna los datos del tweet, "RATE_LIMIT_REACHED" si se alcanza un límite, o None en otros errores.
+        """
+        if self.client is None:
+            return None # Should not happen if simulation_mode is handled correctly
+        
+        try:
+            tweets = self.client.search_recent_tweets(
+                query=query,
+                max_results=self.tweets_per_request,
+                tweet_fields=['created_at', 'author_id', 'geo', 'public_metrics', 'context_annotations']
+            )
+            self.requests_made += 1
+            time.sleep(1) # Rate limiting
+            return tweets
+        except tweepy.errors.TweepyException as e:
+            print(f"❌ Error en query '{query}': {e}")
+            status_code = e.response.status_code if e.response is not None else None
+            if status_code in (403, 429): # 403 Forbidden (Billing Cap), 429 Too Many Requests (Rate Limit)
+                print("⚠️ API Limit or Billing Cap Reached. Switching to massive simulation fallback for remaining queries.")
+                return "RATE_LIMIT_REACHED"
+            return None
+        except Exception as e:
+            print(f"❌ Error inesperado en query '{query}': {e}")
+            return None
+
     def extract_tweets_maximized(self) -> List[Dict]:
         """Extracción maximizada de tweets sobre crímenes de guerra"""
         self.start_time = datetime.now()
         
-        print("🕊️ INICIANDO DOCUMENTACIÓN CRÍMENES DE GUERRA...")
+        print(f"🕊️ INICIANDO DOCUMENTACIÓN CRÍMENES DE GUERRA...")
         
         all_tweets = []
+        simulation_forced = False
         
         if self.simulation_mode:
-            print("🎭 MODO SIMULADO MASIVO - Generando ~100,000 tweets de ejemplo")
-            all_tweets = self.generate_massive_simulation()
-        else:
-            # Extracción real de Twitter
-            for i, query in enumerate(self.queries):
-                if self.requests_made >= self.max_requests:
-                    print(f"🚫 Límite de requests alcanzado: {self.requests_made}")
-                    break
+            print(f"🎭 MODO SIMULADO MASIVO - Generando ~100,000 tweets de ejemplo")
+            all_tweets = self.massive_simulation()
+            # In simulation mode, we generate all at once, so no need to loop through queries
+            self.total_tweets = len(all_tweets)
+            self.critical_tweets = sum(1 for tweet in all_tweets if tweet.get('is_critical', False))
+            return all_tweets
+
+        # Extracción real de Twitter
+        for i, query in enumerate(self.queries, 1):
+            if simulation_forced:
+                 print(f"⏭️ Saltando query '{query}' debido a límite de API. Usando simulación.")
+                 continue
+
+            if self.requests_made >= self.max_requests:
+                print(f"🚫 Límite de requests alcanzado: {self.requests_made}. Finalizando extracción real.")
+                break
+            
+            print(f"🔍 [{i}/{len(self.queries)}] Query: '{query}'")
+            
+            # Request inicial
+            data = self.make_request(query)
+            
+            if data == "RATE_LIMIT_REACHED":
+                print("⚠️ Activando fallback de simulación masiva debido a límite de API...")
+                all_tweets.extend(self.massive_simulation()) # Add simulation data to existing real data
+                simulation_forced = True
+                continue
                 
-                print(f"🔍 [{i+1}/{len(self.queries)}] Query: '{query}'")
-                
-                try:
-                    tweets = self.client.search_recent_tweets(
-                        query=query,
-                        max_results=self.tweets_per_request,
-                        tweet_fields=['created_at', 'author_id', 'geo', 'public_metrics', 'context_annotations']
-                    )
-                    
-                    if tweets.data:
-                        for tweet in tweets.data:
-                            processed_tweet = self.process_tweet(tweet, query)
-                            all_tweets.append(processed_tweet)
-                    
-                    self.requests_made += 1
-                    time.sleep(1)  # Rate limiting
-                    
-                except Exception as e:
-                    print(f"❌ Error en query '{query}': {e}")
-                    continue
+            if not data or not data.data: # Check data.data for actual tweets
+                continue
+            
+            for tweet in data.data:
+                processed_tweet = self.process_tweet(tweet, query)
+                all_tweets.append(processed_tweet)
         
         self.total_tweets = len(all_tweets)
         self.critical_tweets = sum(1 for tweet in all_tweets if tweet.get('is_critical', False))
         
         return all_tweets
 
-    def generate_massive_simulation(self) -> List[Dict]:
+    def massive_simulation(self) -> List[Dict]:
         """Genera simulación masiva de tweets de crímenes de guerra"""
         tweets = []
         
