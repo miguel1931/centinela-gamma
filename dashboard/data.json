@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "processing_timestamp": "2026-03-20T10:53:40.022049",
+    "processing_timestamp": "2026-03-20T12:37:08.627036",
     "original_file_size_mb": 26.020240783691406,
     "original_tweets_count": 50000,
     "processing_version": "1.0",
@@ -18,14 +18,14 @@
     "total_likes": 12475000,
     "avg_engagement": 299.0,
     "extraction_info": {
-      "timestamp": "2026-03-20T10:53:37.688512",
+      "timestamp": "2026-03-20T12:37:06.358740",
       "total_tweets": 50000,
       "budget_used": 0.05,
       "budget_allocated": 2.0,
       "requests_made": 0,
       "max_requests": 2000,
       "cost_per_tweet": 1e-06,
-      "extraction_duration": "0:00:01.363798",
+      "extraction_duration": "0:00:01.370463",
       "tweets_per_dollar": 1000000.0000000001,
       "target_region": "Palestine/Israel"
     },
@@ -120,14 +120,16 @@
   },
   "temporal_analysis": {
     "hourly_distribution": {
+      "12": 2084,
+      "11": 2084,
       "10": 2084,
       "9": 2084,
       "8": 2084,
       "7": 2084,
       "6": 2084,
       "5": 2084,
-      "4": 2084,
-      "3": 2084,
+      "4": 2083,
+      "3": 2083,
       "2": 2083,
       "1": 2083,
       "0": 2083,
@@ -141,25 +143,23 @@
       "16": 2083,
       "15": 2083,
       "14": 2083,
-      "13": 2083,
-      "12": 2083,
-      "11": 2083
+      "13": 2083
     },
     "daily_distribution": {
-      "2026-03-20": 7645,
-      "2026-03-19": 16677,
+      "2026-03-20": 9035,
+      "2026-03-19": 16675,
       "2026-03-18": 16656,
-      "2026-03-17": 9022
+      "2026-03-17": 7634
     },
     "peak_hours": [
-      "10:00 (2084 tweets)",
-      "09:00 (2084 tweets)",
-      "08:00 (2084 tweets)"
+      "12:00 (2084 tweets)",
+      "11:00 (2084 tweets)",
+      "10:00 (2084 tweets)"
     ],
     "peak_days": [
-      "2026-03-19 (16677 tweets)",
+      "2026-03-19 (16675 tweets)",
       "2026-03-18 (16656 tweets)",
-      "2026-03-17 (9022 tweets)"
+      "2026-03-20 (9035 tweets)"
     ],
     "total_time_span_days": 4
   },
