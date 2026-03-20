@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🕊️ Centinela-Gamma | War Crimes Documentation Dashboard</title>
+    <title>🇵🇸 Centinela-Gamma 🕊️ | War Crimes Documentation Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><text y='32' font-size='32'>🕊️</text></svg>">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --accent-green: #10b981;
-            --accent-red: #ef4444;
-            --accent-blue: #3b82f6;
+            --primary-bg: #09090b;
+            --card-bg: rgba(24, 24, 27, 0.7);
+            --accent-green: #149954;
+            --accent-red: #E4312b;
+            --accent-blue: #ffffff;
             --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-muted: #a1a1aa;
+            --glass-border: rgba(255, 255, 255, 0.08);
         }
 
         * {
@@ -27,10 +27,12 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at top left, #1e293b, #0f172a);
+            background: radial-gradient(circle at top left, #18181b, #000000);
             color: var(--text-main);
             line-height: 1.6;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -249,10 +251,7 @@
     </div>
 
     <header>
-        <div class="logo">
-            <span>🕊️</span>
-            <span>Centinela-Gamma</span>
-        </div>
+        <div class="logo">🇵🇸 Centinela-Gamma 🕊️</div>
         <div class="status-badge">
             <div class="status-dot"></div>
             <span>Monitoreo Activo</span>
@@ -270,7 +269,7 @@
                 </div>
             </div>
             <div class="card">
-                <p class="metric-title">Incidentes Críticos</p>
+                        <div class="metric-title">Tweets Críticos 🇵🇸</div>
                 <p class="metric-value" style="color: var(--accent-red)" id="criticalCount">-</p>
                 <div class="metric-trend" style="color: var(--accent-red)">
                     <span id="criticalPerc">-</span>% del total
@@ -432,12 +431,14 @@
         }
 
         init();
-    </script>
-</body>
-</html>
-entListener('unhandledrejection', (event) => {
+
+        window.addEventListener('unhandledrejection', (event) => {
             console.error('Promise rejection no manejada:', event.reason);
         });
     </script>
+    
+    <footer style="border-top: 1px solid rgba(255, 255, 255, 0.1); background: rgba(0, 0, 0, 0.3); padding: 1.5rem; text-align: center; font-size: 0.875rem; color: #a1a1aa; margin-top: auto; backdrop-filter: blur(10px);">
+        Centinela Gamma — Forjado en la Forja Nova 🔥
+    </footer>
 </body>
 </html>
