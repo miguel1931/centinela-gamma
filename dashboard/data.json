@@ -1,60 +1,60 @@
 {
   "metadata": {
-    "processing_timestamp": "2026-04-03T18:35:24.455397",
-    "original_file_size_mb": 26.020240783691406,
-    "original_tweets_count": 50000,
+    "processing_timestamp": "2026-04-04T01:17:41.029355",
+    "original_file_size_mb": 26.616823196411133,
+    "original_tweets_count": 51090,
     "processing_version": "1.0",
     "source": "CENTINELA-GAMMA"
   },
   "basic_metrics": {
-    "total_tweets": 50000,
-    "critical_tweets": 42709,
-    "critical_percentage": 85.42,
-    "unique_authors": 2000,
-    "avg_tweets_per_author": 25.0,
-    "avg_relevance_score": 79.5,
+    "total_tweets": 51090,
+    "critical_tweets": 43068,
+    "critical_percentage": 84.3,
+    "unique_authors": 2710,
+    "avg_tweets_per_author": 18.85,
+    "avg_relevance_score": 78.61,
     "high_relevance_count": 23750,
-    "total_retweets": 2475000,
-    "total_likes": 12475000,
-    "avg_engagement": 299.0,
+    "total_retweets": 2485424,
+    "total_likes": 12495044,
+    "avg_engagement": 293.22,
     "extraction_info": {
-      "timestamp": "2026-04-03T18:35:22.143407",
-      "total_tweets": 50000,
-      "budget_used": 0.05,
+      "timestamp": "2026-04-04T01:17:38.420821",
+      "total_tweets": 51090,
+      "budget_used": 0.05109,
       "budget_allocated": 2.0,
-      "requests_made": 0,
+      "requests_made": 11,
       "max_requests": 2000,
       "cost_per_tweet": 1e-06,
-      "extraction_duration": "0:00:01.427542",
+      "extraction_duration": "0:00:17.120201",
       "tweets_per_dollar": 1000000.0000000001,
       "target_region": "Palestine/Israel"
     },
     "war_crimes_indicators": {
-      "civilian_casualties": 6250,
+      "civilian_casualties": 6280,
       "infrastructure_attacks": 625,
       "settlement_activities": 4167,
-      "humanitarian_violations": 4167
+      "humanitarian_violations": 4173
     }
   },
   "bot_analysis": {
     "bot_probability_percentage": 25,
     "confidence_level": "LOW",
     "indicators": [
-      "Contenido repetitivo: 93.8%"
+      "Contenido repetitivo: 69.4%"
     ],
     "suspicious_patterns": {
-      "high_volume_authors": 0,
-      "repeated_content": 1875,
+      "high_volume_authors": 2,
+      "repeated_content": 1880,
       "timing_clusters": 0,
-      "low_engagement_spam": 4
+      "low_engagement_spam": 9
     },
-    "total_authors_analyzed": 2000,
+    "total_authors_analyzed": 2710,
     "content_similarity_samples": {
-      "user_1": 0.04,
-      "user_2": 0.04,
-      "user_3": 0.04,
-      "user_4": 0.04,
-      "user_5": 0.04
+      "2018257992106532864": 0.5,
+      "1473222081500303366": 0.69,
+      "1276501938754826241": 0.25,
+      "3363925907": 0.13,
+      "1339390322": 0.69
     },
     "recommendations": [
       "RIESGO BAJO: Mantener monitoreo regular",
@@ -62,36 +62,40 @@
       "Documentar patrones para referencia futura"
     ],
     "analysis_details": {
-      "avg_tweets_per_author": 25.0,
-      "high_volume_authors": 0,
-      "repeated_content_authors": 1875,
-      "spam_like_authors": 4
+      "avg_tweets_per_author": 18.85,
+      "high_volume_authors": 2,
+      "repeated_content_authors": 1880,
+      "spam_like_authors": 9
     }
   },
   "keywords_analysis": {
     "top_keywords": {
-      "killed": 6250,
-      "Israeli forces": 6250,
+      "killed": 6272,
+      "Israeli forces": 6270,
       "home demolition": 4167,
+      "IDF": 3156,
+      "missile": 3136,
+      "war crime": 3130,
+      "airstrike": 3128,
+      "settlers attack": 3126,
+      "siege": 3126,
       "civilians killed": 3125,
-      "airstrike": 3125,
-      "missile": 3125,
-      "settlers attack": 3125,
-      "IDF": 3125,
       "bulldozer": 3125,
-      "war crime": 3125,
-      "siege": 3125,
       "clean water": 3125,
       "medical supplies": 3125,
-      "collective punishment": 1042,
+      "collective punishment": 1043,
       "school destroyed": 625
     },
-    "total_keywords_detected": 49584,
-    "unique_keywords": 15,
+    "total_keywords_detected": 49984,
+    "unique_keywords": 30,
     "categorized_keywords": {
       "violencia": {
-        "killed": 6250,
-        "airstrike": 3125
+        "killed": 6272,
+        "dead": 9,
+        "murdered": 8,
+        "shot": 7,
+        "bombing": 10,
+        "airstrike": 3128
       },
       "victimas": {
         "civilians killed": 3125
@@ -101,65 +105,71 @@
         "home demolition": 4167
       },
       "militar": {
-        "IDF": 3125,
-        "Israeli forces": 6250
+        "IDF": 3156,
+        "Israeli forces": 6270,
+        "Israeli army": 7,
+        "tank": 7,
+        "drone strike": 2
       },
       "legal": {
-        "war crime": 3125
+        "war crime": 3130,
+        "genocide": 207,
+        "apartheid": 17
       },
       "humanitario": {
-        "siege": 3125,
-        "collective punishment": 1042
+        "siege": 3126,
+        "blockade": 4,
+        "collective punishment": 1043
       }
     },
     "critical_indicators": {
-      "violence_mentions": 9375,
+      "violence_mentions": 9434,
       "victim_mentions": 3125,
-      "war_crimes_mentions": 3125
+      "war_crimes_mentions": 3354
     }
   },
   "temporal_analysis": {
     "hourly_distribution": {
-      "18": 2084,
-      "17": 2084,
-      "16": 2084,
-      "15": 2084,
-      "14": 2084,
-      "13": 2084,
-      "12": 2084,
-      "11": 2084,
-      "10": 2083,
-      "9": 2083,
-      "8": 2083,
-      "7": 2083,
-      "6": 2083,
-      "5": 2083,
-      "4": 2083,
-      "3": 2083,
-      "2": 2083,
-      "1": 2083,
-      "0": 2083,
-      "23": 2083,
-      "22": 2083,
-      "21": 2083,
-      "20": 2083,
-      "19": 2083
+      "1": 2238,
+      "0": 2252,
+      "23": 2175,
+      "22": 2179,
+      "21": 2148,
+      "20": 2209,
+      "19": 2154,
+      "18": 2148,
+      "17": 2115,
+      "16": 2124,
+      "15": 2124,
+      "14": 2121,
+      "13": 2097,
+      "12": 2104,
+      "11": 2101,
+      "10": 2108,
+      "7": 2087,
+      "6": 2088,
+      "5": 2086,
+      "3": 2085,
+      "2": 2088,
+      "9": 2087,
+      "8": 2087,
+      "4": 2085
     },
     "daily_distribution": {
-      "2026-04-03": 13205,
-      "2026-04-02": 16669,
-      "2026-04-01": 16656,
-      "2026-03-31": 3470
+      "2026-04-04": 1702,
+      "2026-04-03": 17341,
+      "2026-04-02": 16779,
+      "2026-04-01": 15268
     },
     "peak_hours": [
-      "18:00 (2084 tweets)",
-      "17:00 (2084 tweets)",
-      "16:00 (2084 tweets)"
+      "00:00 (2252 tweets)",
+      "01:00 (2238 tweets)",
+      "20:00 (2209 tweets)"
     ],
     "peak_days": [
-      "2026-04-02 (16669 tweets)",
-      "2026-04-01 (16656 tweets)",
-      "2026-04-03 (13205 tweets)"
+      "2026-04-03 (17341 tweets)",
+      "2026-04-02 (16779 tweets)",
+      "2026-04-01 (15268 tweets)"
     ],
     "total_time_span_days": 4
   },
@@ -187,19 +197,19 @@
   },
   "war_crimes_analysis": {
     "indicators": {
-      "civilian_casualties": 6250,
-      "infrastructure_attacks": 3125,
-      "settlement_activities": 7292,
-      "humanitarian_violations": 4167,
-      "children_casualties": 3125,
-      "medical_attacks": 1250,
+      "civilian_casualties": 6280,
+      "infrastructure_attacks": 3138,
+      "settlement_activities": 7293,
+      "humanitarian_violations": 4173,
+      "children_casualties": 3132,
+      "medical_attacks": 1251,
       "education_attacks": 625,
-      "religious_site_attacks": 625
+      "religious_site_attacks": 626
     },
-    "total_violations": 26459,
+    "total_violations": 26518,
     "severity_score": 100,
     "severity_level": "EXTREME",
-    "violations_per_thousand_tweets": 529.18
+    "violations_per_thousand_tweets": 519.04
   },
   "representative_examples": {
     "most_critical": [
@@ -318,125 +328,120 @@
     ],
     "infrastructure_attacks": [
       {
-        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
-        "location": "Nablus",
-        "relevance_score": 93,
+        "text": "In Gaza, approximately 97% of the territory’s livestock has been wiped out, through bombing by Evil Israeli forces.\n\nIsraeli occupation of Gaza means no property rights, no livestock, and, ultimately,...",
+        "location": "Unknown",
+        "relevance_score": 55,
         "is_critical": true,
         "keywords": [
-          "airstrike",
-          "school destroyed"
+          "bombing",
+          "Israeli forces"
         ],
         "engagement": {
-          "retweets": 33,
-          "likes": 33
+          "retweets": 0,
+          "likes": 0
         }
       },
       {
-        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
-        "location": "Bethlehem",
-        "relevance_score": 93,
+        "text": "@VividProwess Hamas is a terrorist regime that took military control of the Gaza Strip. They brutalize the population. Supporting them is supporting terrorism. Better to die in a bombing than live und...",
+        "location": "Unknown",
+        "relevance_score": 45,
         "is_critical": true,
         "keywords": [
-          "airstrike",
-          "school destroyed"
+          "bombing"
         ],
         "engagement": {
-          "retweets": 13,
-          "likes": 113
+          "retweets": 0,
+          "likes": 0
         }
       },
       {
-        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
-        "location": "Silwan",
-        "relevance_score": 93,
+        "text": "The Israeli army published footage documenting the bombing of a police post in northern Gaza Strip today. https://t.co/2jywuVTqwG",
+        "location": "Unknown",
+        "relevance_score": 55,
         "is_critical": true,
         "keywords": [
-          "airstrike",
-          "school destroyed"
+          "bombing",
+          "Israeli army"
         ],
         "engagement": {
-          "retweets": 93,
-          "likes": 193
+          "retweets": 3,
+          "likes": 4
         }
       }
     ],
     "war_crimes": [
       {
-        "text": "War crime alert: Israel targets hospital in violation of international law.",
-        "location": "Hebron",
-        "relevance_score": 68,
+        "text": "@highnoon427 @thespaceavenue Oh so no genocide in gaza, gotcha 👌😁😁",
+        "location": "Unknown",
+        "relevance_score": 45,
         "is_critical": true,
         "keywords": [
-          "war crime"
+          "genocide"
         ],
         "engagement": {
-          "retweets": 8,
-          "likes": 8
+          "retweets": 0,
+          "likes": 0
         }
       },
       {
-        "text": "War crime alert: Israel targets hospital in violation of international law.",
-        "location": "Silwan",
-        "relevance_score": 84,
+        "text": "@Tony892137490l @no81141672 @TheKindAnGentle Gaza is getting destroyed under Trump too, it’s not really something you can use against Biden in defense of Trump. They both aided and defended genocide.",
+        "location": "Unknown",
+        "relevance_score": 45,
         "is_critical": true,
         "keywords": [
-          "war crime"
+          "genocide"
         ],
         "engagement": {
-          "retweets": 24,
-          "likes": 24
+          "retweets": 0,
+          "likes": 0
         }
       },
       {
-        "text": "War crime alert: Israel targets hospital in violation of international law.",
-        "location": "Khan Younis",
-        "relevance_score": 60,
+        "text": "@Andre21653405 I seem to remember the damage and genocide committed in Gaza, short memories the Israeli's.",
+        "location": "Unknown",
+        "relevance_score": 45,
         "is_critical": true,
         "keywords": [
-          "war crime"
+          "genocide"
         ],
         "engagement": {
-          "retweets": 40,
-          "likes": 40
+          "retweets": 0,
+          "likes": 0
         }
       }
     ],
     "high_engagement": [
       {
-        "text": "Gaza medics report 25 killed, 54 wounded in latest Israeli bombardment of Ramallah.",
-        "location": "Ramallah",
-        "relevance_score": 79,
-        "is_critical": true,
-        "keywords": [
-          "killed"
-        ],
-        "engagement": {
-          "retweets": 99,
-          "likes": 499
-        }
-      },
-      {
-        "text": "Checkpoint violence: Israeli soldiers shoot Palestinian youth at Checkpoint 10.",
-        "location": "Silwan",
-        "relevance_score": 99,
+        "text": "Imagina que estás en tu hogar tranquilamente y un grupo de colonos israelís viene con palos, rompen tu coche, destroza tu casa, te golpea, mata a tus animales y prende fuego a casa.\nEsto ocurre todos ...",
+        "location": "Unknown",
+        "relevance_score": 30,
         "is_critical": false,
         "keywords": [],
         "engagement": {
-          "retweets": 99,
-          "likes": 499
+          "retweets": 3559,
+          "likes": 4680
         }
       },
       {
-        "text": "Amnesty International calls for investigation into Israeli collective punishment.",
-        "location": "Beit Hanoun",
-        "relevance_score": 79,
-        "is_critical": true,
-        "keywords": [
-          "collective punishment"
-        ],
+        "text": "Armed israelis caught on camera maliciously sabotaging precious Palestinian water wells in the town of Huwara, just south of Nablus https://t.co/OoTZe6QyR4",
+        "location": "Unknown",
+        "relevance_score": 30,
+        "is_critical": false,
+        "keywords": [],
         "engagement": {
-          "retweets": 99,
-          "likes": 499
+          "retweets": 2323,
+          "likes": 3173
+        }
+      },
+      {
+        "text": "Getting ready for Easter in Ramallah🇵🇸 🐣 \n\n🎥 Orthodox Youth Ramallah https://t.co/K3Mnd9F1Ug",
+        "location": "Unknown",
+        "relevance_score": 30,
+        "is_critical": false,
+        "keywords": [],
+        "engagement": {
+          "retweets": 358,
+          "likes": 2064
         }
       }
     ]
