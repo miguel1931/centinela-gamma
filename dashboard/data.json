@@ -1,60 +1,60 @@
 {
   "metadata": {
-    "processing_timestamp": "2026-05-04T00:23:08.033627",
-    "original_file_size_mb": 26.626876831054688,
-    "original_tweets_count": 51087,
+    "processing_timestamp": "2026-05-04T06:58:42.135788",
+    "original_file_size_mb": 26.020240783691406,
+    "original_tweets_count": 50000,
     "processing_version": "1.0",
     "source": "CENTINELA-GAMMA"
   },
   "basic_metrics": {
-    "total_tweets": 51087,
-    "critical_tweets": 43244,
-    "critical_percentage": 84.65,
-    "unique_authors": 2595,
-    "avg_tweets_per_author": 19.69,
-    "avg_relevance_score": 78.67,
-    "high_relevance_count": 23751,
-    "total_retweets": 2480667,
-    "total_likes": 12486703,
-    "avg_engagement": 292.98,
+    "total_tweets": 50000,
+    "critical_tweets": 42709,
+    "critical_percentage": 85.42,
+    "unique_authors": 2000,
+    "avg_tweets_per_author": 25.0,
+    "avg_relevance_score": 79.5,
+    "high_relevance_count": 23750,
+    "total_retweets": 2475000,
+    "total_likes": 12475000,
+    "avg_engagement": 299.0,
     "extraction_info": {
-      "timestamp": "2026-05-04T00:23:05.631822",
-      "total_tweets": 51087,
-      "budget_used": 0.051087,
+      "timestamp": "2026-05-04T06:58:39.922054",
+      "total_tweets": 50000,
+      "budget_used": 0.05,
       "budget_allocated": 2.0,
-      "requests_made": 11,
+      "requests_made": 0,
       "max_requests": 2000,
       "cost_per_tweet": 1e-06,
-      "extraction_duration": "0:00:17.224829",
-      "tweets_per_dollar": 1000000.0,
+      "extraction_duration": "0:00:01.258737",
+      "tweets_per_dollar": 1000000.0000000001,
       "target_region": "Palestine/Israel"
     },
     "war_crimes_indicators": {
-      "civilian_casualties": 6346,
+      "civilian_casualties": 6250,
       "infrastructure_attacks": 625,
-      "settlement_activities": 4171,
-      "humanitarian_violations": 4177
+      "settlement_activities": 4167,
+      "humanitarian_violations": 4167
     }
   },
   "bot_analysis": {
     "bot_probability_percentage": 25,
     "confidence_level": "LOW",
     "indicators": [
-      "Contenido repetitivo: 72.4%"
+      "Contenido repetitivo: 93.8%"
     ],
     "suspicious_patterns": {
-      "high_volume_authors": 4,
-      "repeated_content": 1879,
+      "high_volume_authors": 0,
+      "repeated_content": 1875,
       "timing_clusters": 0,
-      "low_engagement_spam": 12
+      "low_engagement_spam": 4
     },
-    "total_authors_analyzed": 2595,
+    "total_authors_analyzed": 2000,
     "content_similarity_samples": {
-      "1907743794117881857": 0.1,
-      "1473222081500303366": 0.61,
-      "3363925907": 0.06,
-      "717600967": 0.17,
-      "user_1": 0.04
+      "user_1": 0.04,
+      "user_2": 0.04,
+      "user_3": 0.04,
+      "user_4": 0.04,
+      "user_5": 0.04
     },
     "recommendations": [
       "RIESGO BAJO: Mantener monitoreo regular",
@@ -62,43 +62,38 @@
       "Documentar patrones para referencia futura"
     ],
     "analysis_details": {
-      "avg_tweets_per_author": 19.69,
-      "high_volume_authors": 4,
-      "repeated_content_authors": 1879,
-      "spam_like_authors": 12
+      "avg_tweets_per_author": 25.0,
+      "high_volume_authors": 0,
+      "repeated_content_authors": 1875,
+      "spam_like_authors": 4
     }
   },
   "keywords_analysis": {
     "top_keywords": {
-      "killed": 6342,
-      "Israeli forces": 6284,
+      "killed": 6250,
+      "Israeli forces": 6250,
       "home demolition": 4167,
-      "IDF": 3163,
-      "clean water": 3140,
-      "war crime": 3134,
-      "bulldozer": 3131,
-      "siege": 3128,
-      "settlers attack": 3128,
       "civilians killed": 3125,
       "airstrike": 3125,
       "missile": 3125,
+      "settlers attack": 3125,
+      "IDF": 3125,
+      "bulldozer": 3125,
+      "war crime": 3125,
+      "siege": 3125,
+      "clean water": 3125,
       "medical supplies": 3125,
-      "collective punishment": 1046,
+      "collective punishment": 1042,
       "school destroyed": 625
     },
-    "total_keywords_detected": 50261,
-    "unique_keywords": 33,
+    "total_keywords_detected": 49584,
+    "unique_keywords": 15,
     "categorized_keywords": {
       "violencia": {
-        "killed": 6342,
-        "dead": 9,
-        "murdered": 8,
-        "shot": 24,
-        "bombing": 13,
+        "killed": 6250,
         "airstrike": 3125
       },
       "victimas": {
-        "children killed": 2,
         "civilians killed": 3125
       },
       "infraestructura": {
@@ -106,72 +101,65 @@
         "home demolition": 4167
       },
       "militar": {
-        "IDF": 3163,
-        "Israeli forces": 6284,
-        "Israeli army": 40,
-        "tank": 2
+        "IDF": 3125,
+        "Israeli forces": 6250
       },
       "legal": {
-        "war crime": 3134,
-        "genocide": 285,
-        "ethnic cleansing": 12,
-        "apartheid": 25,
-        "illegal settlement": 4
+        "war crime": 3125
       },
       "humanitario": {
-        "siege": 3128,
-        "blockade": 3,
-        "collective punishment": 1046
+        "siege": 3125,
+        "collective punishment": 1042
       }
     },
     "critical_indicators": {
-      "violence_mentions": 9521,
-      "victim_mentions": 3127,
-      "war_crimes_mentions": 3460
+      "violence_mentions": 9375,
+      "victim_mentions": 3125,
+      "war_crimes_mentions": 3125
     }
   },
   "temporal_analysis": {
     "hourly_distribution": {
-      "0": 2254,
-      "23": 2330,
-      "22": 2141,
-      "21": 2164,
-      "20": 2133,
-      "19": 2194,
-      "17": 2119,
-      "16": 2126,
-      "14": 2110,
-      "13": 2198,
-      "18": 2130,
-      "15": 2119,
-      "12": 2103,
-      "11": 2094,
-      "10": 2096,
-      "9": 2087,
-      "8": 2089,
-      "7": 2094,
-      "4": 2084,
-      "2": 2084,
-      "1": 2088,
       "6": 2084,
-      "5": 2083,
-      "3": 2083
+      "5": 2084,
+      "4": 2084,
+      "3": 2084,
+      "2": 2084,
+      "1": 2084,
+      "0": 2084,
+      "23": 2084,
+      "22": 2083,
+      "21": 2083,
+      "20": 2083,
+      "19": 2083,
+      "18": 2083,
+      "17": 2083,
+      "16": 2083,
+      "15": 2083,
+      "14": 2083,
+      "13": 2083,
+      "12": 2083,
+      "11": 2083,
+      "10": 2083,
+      "9": 2083,
+      "8": 2083,
+      "7": 2083
     },
     "daily_distribution": {
-      "2026-05-04": 862,
-      "2026-05-03": 17542,
-      "2026-05-02": 16711,
-      "2026-05-01": 15972
+      "2026-05-04": 4865,
+      "2026-05-03": 16680,
+      "2026-05-02": 16657,
+      "2026-05-01": 11798
     },
     "peak_hours": [
-      "23:00 (2330 tweets)",
-      "00:00 (2254 tweets)",
-      "13:00 (2198 tweets)"
+      "06:00 (2084 tweets)",
+      "05:00 (2084 tweets)",
+      "04:00 (2084 tweets)"
     ],
     "peak_days": [
-      "2026-05-03 (17542 tweets)",
-      "2026-05-02 (16711 tweets)",
-      "2026-05-01 (15972 tweets)"
+      "2026-05-03 (16680 tweets)",
+      "2026-05-02 (16657 tweets)",
+      "2026-05-01 (11798 tweets)"
     ],
     "total_time_span_days": 4
   },
@@ -199,19 +187,19 @@
   },
   "war_crimes_analysis": {
     "indicators": {
-      "civilian_casualties": 6346,
-      "infrastructure_attacks": 3138,
-      "settlement_activities": 7299,
-      "humanitarian_violations": 4177,
-      "children_casualties": 3132,
-      "medical_attacks": 1251,
+      "civilian_casualties": 6250,
+      "infrastructure_attacks": 3125,
+      "settlement_activities": 7292,
+      "humanitarian_violations": 4167,
+      "children_casualties": 3125,
+      "medical_attacks": 1250,
       "education_attacks": 625,
       "religious_site_attacks": 625
     },
-    "total_violations": 26593,
+    "total_violations": 26459,
     "severity_score": 100,
     "severity_level": "EXTREME",
-    "violations_per_thousand_tweets": 520.54
+    "violations_per_thousand_tweets": 529.18
   },
   "representative_examples": {
     "most_critical": [
@@ -283,35 +271,6 @@
     ],
     "civilian_casualties": [
       {
-        "text": "This month in the history of zionism:\n\nDima Sa’d Ali Asaliya wearing a tiara, her hands freshly hennaed, was one of 66 children killed by Israel in ‘Operation Guardian of the Walls’, May 10 – 21, 2021...",
-        "location": "Unknown",
-        "relevance_score": 80,
-        "is_critical": true,
-        "keywords": [
-          "killed",
-          "children killed",
-          "siege"
-        ],
-        "engagement": {
-          "retweets": 4,
-          "likes": 6
-        }
-      },
-      {
-        "text": "@ShaykhSulaiman Are the twenty thousand children killed in #Gaza by the Jewish state innocent? Just asking questions",
-        "location": "Unknown",
-        "relevance_score": 55,
-        "is_critical": true,
-        "keywords": [
-          "killed",
-          "children killed"
-        ],
-        "engagement": {
-          "retweets": 0,
-          "likes": 1
-        }
-      },
-      {
         "text": "BREAKING: Israeli forces bomb Gaza City in Gaza. 1 civilians killed including 1 children.",
         "location": "Gaza City",
         "relevance_score": 60,
@@ -325,127 +284,159 @@
           "retweets": 0,
           "likes": 0
         }
+      },
+      {
+        "text": "BREAKING: Israeli forces bomb Jabalia in Gaza. 2 civilians killed including 1 children.",
+        "location": "Jabalia",
+        "relevance_score": 76,
+        "is_critical": true,
+        "keywords": [
+          "killed",
+          "civilians killed",
+          "Israeli forces"
+        ],
+        "engagement": {
+          "retweets": 16,
+          "likes": 16
+        }
+      },
+      {
+        "text": "BREAKING: Israeli forces bomb Jenin in Gaza. 3 civilians killed including 1 children.",
+        "location": "Jenin",
+        "relevance_score": 92,
+        "is_critical": true,
+        "keywords": [
+          "killed",
+          "civilians killed",
+          "Israeli forces"
+        ],
+        "engagement": {
+          "retweets": 32,
+          "likes": 32
+        }
       }
     ],
     "infrastructure_attacks": [
       {
-        "text": "@Rhianna_1989 @FuriousManiati I think the Jury has answered that question over 1 year ago. \nSee @AdamKinzinger's article on the subject. \nIsrael carried on bombing the crap out of Gaza when it should ...",
-        "location": "Unknown",
-        "relevance_score": 45,
+        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
+        "location": "Nablus",
+        "relevance_score": 93,
         "is_critical": true,
         "keywords": [
-          "bombing"
+          "airstrike",
+          "school destroyed"
         ],
         "engagement": {
-          "retweets": 0,
-          "likes": 0
+          "retweets": 33,
+          "likes": 33
         }
       },
       {
-        "text": "@NortonNyc @snowleopardess @MaureenMottra10 1) Overwhelming majority of genocide scholars and humans rights orgs agree it's genocide (your OPINION is worthless)\n2) They are indeed trying to eliminate ...",
-        "location": "Unknown",
-        "relevance_score": 55,
+        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
+        "location": "Bethlehem",
+        "relevance_score": 93,
         "is_critical": true,
         "keywords": [
-          "bombing",
-          "genocide"
+          "airstrike",
+          "school destroyed"
         ],
         "engagement": {
-          "retweets": 0,
-          "likes": 0
+          "retweets": 13,
+          "likes": 113
         }
       },
       {
-        "text": "#zionistterror #TerroristIsrael #GazaUnderAttack #GazaBombing #GazaGenocide #GazaHolocaust #MuslimHolocaust #GazaStarving #GazaGeniocide #GazaMassacre\n#STOPzionistTerrorism #StopGazaGenocide #SaveGaza...",
-        "location": "Unknown",
-        "relevance_score": 55,
+        "text": "Gaza UPDATE: school destroyed by Israeli airstrike. Medical staff treating wounded in corridors.",
+        "location": "Silwan",
+        "relevance_score": 93,
         "is_critical": true,
         "keywords": [
-          "bombing",
-          "genocide"
+          "airstrike",
+          "school destroyed"
         ],
         "engagement": {
-          "retweets": 0,
-          "likes": 0
+          "retweets": 93,
+          "likes": 193
         }
       }
     ],
     "war_crimes": [
       {
-        "text": "@Suzierizzo1 No.  Why you may ask? Israeli organizations conclude Israel committing genocide against Palestinians in Gaza in another milestone for accountability efforts  https://t.co/kGp0O63Vly",
-        "location": "Unknown",
-        "relevance_score": 45,
+        "text": "War crime alert: Israel targets hospital in violation of international law.",
+        "location": "Hebron",
+        "relevance_score": 68,
         "is_critical": true,
         "keywords": [
-          "genocide"
+          "war crime"
         ],
         "engagement": {
-          "retweets": 0,
-          "likes": 0
+          "retweets": 8,
+          "likes": 8
         }
       },
       {
-        "text": "@21WIRE Trump’s Zionist cabal lies after lies…\n\nIncluding - there was NO pilot rescue mission — but there is a US genocide in Gaza and now also in Lebanon and West Bank.\n\nBut — UFO files will now be p...",
-        "location": "Unknown",
-        "relevance_score": 45,
+        "text": "War crime alert: Israel targets hospital in violation of international law.",
+        "location": "Silwan",
+        "relevance_score": 84,
         "is_critical": true,
         "keywords": [
-          "genocide"
+          "war crime"
         ],
         "engagement": {
-          "retweets": 0,
-          "likes": 0
+          "retweets": 24,
+          "likes": 24
         }
       },
       {
-        "text": "A Palestinian builds a mud house in Gaza to shield his family from the winter cold. his home was destroyed by the Zionist genocide in Gaza. He relies on the simplest available materials, as the Zionis...",
-        "location": "Unknown",
-        "relevance_score": 45,
+        "text": "War crime alert: Israel targets hospital in violation of international law.",
+        "location": "Khan Younis",
+        "relevance_score": 60,
         "is_critical": true,
         "keywords": [
-          "genocide"
+          "war crime"
         ],
         "engagement": {
-          "retweets": 0,
-          "likes": 0
+          "retweets": 40,
+          "likes": 40
         }
       }
     ],
     "high_engagement": [
       {
-        "text": "This morning in Ramallah, Border Police and IDF forces shut down a money-changing business that was funneling funds to Hamas operatives, advancing terror against Israel and its citizens. \n\nFive suspec...",
-        "location": "Unknown",
-        "relevance_score": 50,
+        "text": "Gaza medics report 25 killed, 54 wounded in latest Israeli bombardment of Ramallah.",
+        "location": "Ramallah",
+        "relevance_score": 79,
         "is_critical": true,
         "keywords": [
-          "IDF",
-          "border police"
+          "killed"
         ],
         "engagement": {
-          "retweets": 1058,
-          "likes": 4728
+          "retweets": 99,
+          "likes": 499
         }
       },
       {
-        "text": "ÚLTIMA HORA: francotiradores israelíes acaban de disparar a un joven palestino desarmado en Cisjordania sin motivo alguno https://t.co/nLQfqVPt6F",
-        "location": "Unknown",
-        "relevance_score": 30,
+        "text": "Checkpoint violence: Israeli soldiers shoot Palestinian youth at Checkpoint 10.",
+        "location": "Silwan",
+        "relevance_score": 99,
         "is_critical": false,
         "keywords": [],
         "engagement": {
-          "retweets": 805,
-          "likes": 713
+          "retweets": 99,
+          "likes": 499
         }
       },
       {
-        "text": "This is devastating. \n\nA Palestinian man, nervous and excited to become a father, left Rafidia Hospital in Nablus in the West Bank for a quick stop at the local supermarket while his wife was getting ...",
-        "location": "Unknown",
-        "relevance_score": 35,
-        "is_critical": false,
-        "keywords": [],
+        "text": "Amnesty International calls for investigation into Israeli collective punishment.",
+        "location": "Beit Hanoun",
+        "relevance_score": 79,
+        "is_critical": true,
+        "keywords": [
+          "collective punishment"
+        ],
         "engagement": {
-          "retweets": 390,
-          "likes": 902
+          "retweets": 99,
+          "likes": 499
         }
       }
     ]
