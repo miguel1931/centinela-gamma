@@ -1,39 +1,39 @@
 {
   "metadata": {
-    "processing_timestamp": "2026-07-04T00:26:10.588131",
-    "original_file_size_mb": 0.3728017807006836,
-    "original_tweets_count": 700,
+    "processing_timestamp": "2026-07-04T06:57:51.137161",
+    "original_file_size_mb": 0.005272865295410156,
+    "original_tweets_count": 0,
     "processing_version": "1.0",
     "source": "CENTINELA-GAMMA"
   },
   "basic_metrics": {
-    "total_tweets": 700,
-    "critical_tweets": 290,
-    "critical_percentage": 41.43,
-    "unique_authors": 464,
-    "avg_tweets_per_author": 1.51,
-    "avg_relevance_score": 39.18,
+    "total_tweets": 0,
+    "critical_tweets": 0,
+    "critical_percentage": 0.0,
+    "unique_authors": 0,
+    "avg_tweets_per_author": 0.0,
+    "avg_relevance_score": 0.0,
     "high_relevance_count": 0,
-    "total_retweets": 809264,
-    "total_likes": 409,
-    "avg_engagement": 1156.68,
+    "total_retweets": 0,
+    "total_likes": 0,
+    "avg_engagement": 0.0,
     "extraction_info": {
-      "timestamp": "2026-07-04T00:26:10.489192",
-      "total_tweets": 700,
-      "budget_used": 0.0007,
+      "timestamp": "2026-07-04T06:57:51.079597",
+      "total_tweets": 0,
+      "budget_used": 0.0,
       "budget_allocated": 2.0,
-      "requests_made": 7,
+      "requests_made": 0,
       "max_requests": 2000,
       "cost_per_tweet": 1e-06,
-      "extraction_duration": "0:00:11.711662",
-      "tweets_per_dollar": 700000.0,
+      "extraction_duration": "0:00:01.525067",
+      "tweets_per_dollar": 0.0,
       "target_region": "Palestine/Israel"
     },
     "war_crimes_indicators": {
-      "civilian_casualties": 24,
+      "civilian_casualties": 0,
       "infrastructure_attacks": 0,
-      "settlement_activities": 1,
-      "humanitarian_violations": 4
+      "settlement_activities": 0,
+      "humanitarian_violations": 0
     }
   },
   "bot_analysis": {
@@ -41,124 +41,49 @@
     "confidence_level": "LOW",
     "indicators": [],
     "suspicious_patterns": {
-      "high_volume_authors": 1,
-      "repeated_content": 2,
+      "high_volume_authors": 0,
+      "repeated_content": 0,
       "timing_clusters": 0,
-      "low_engagement_spam": 4
+      "low_engagement_spam": 0
     },
-    "total_authors_analyzed": 464,
-    "content_similarity_samples": {
-      "1907743794117881857": 0.07,
-      "1935292160695275520": 0.32
-    },
+    "total_authors_analyzed": 0,
+    "content_similarity_samples": {},
     "recommendations": [
       "RIESGO BAJO: Mantener monitoreo regular",
       "Continuar análisis de tendencias",
       "Documentar patrones para referencia futura"
     ],
     "analysis_details": {
-      "avg_tweets_per_author": 1.51,
-      "high_volume_authors": 1,
-      "repeated_content_authors": 2,
-      "spam_like_authors": 4
+      "avg_tweets_per_author": 0.0,
+      "high_volume_authors": 0,
+      "repeated_content_authors": 0,
+      "spam_like_authors": 0
     }
   },
   "keywords_analysis": {
-    "top_keywords": {
-      "genocide": 203,
-      "apartheid": 24,
-      "killed": 23,
-      "occupation forces": 18,
-      "IDF": 12,
-      "Israeli forces": 9,
-      "siege": 4,
-      "ethnic cleansing": 3,
-      "war crime": 3,
-      "artillery": 3,
-      "dead": 3,
-      "shot": 2,
-      "Israeli army": 2,
-      "shelling": 2,
-      "clean water": 2
-    },
-    "total_keywords_detected": 317,
-    "unique_keywords": 19,
+    "top_keywords": {},
+    "total_keywords_detected": 0,
+    "unique_keywords": 0,
     "categorized_keywords": {
-      "violencia": {
-        "killed": 23,
-        "dead": 3,
-        "shot": 2,
-        "bombing": 1,
-        "shelling": 2
-      },
+      "violencia": {},
       "victimas": {},
       "infraestructura": {},
-      "militar": {
-        "IDF": 12,
-        "Israeli forces": 9,
-        "Israeli army": 2,
-        "tank": 1
-      },
-      "legal": {
-        "war crime": 3,
-        "genocide": 203,
-        "ethnic cleansing": 3,
-        "apartheid": 24,
-        "illegal settlement": 1
-      },
-      "humanitario": {
-        "siege": 4
-      }
+      "militar": {},
+      "legal": {},
+      "humanitario": {}
     },
     "critical_indicators": {
-      "violence_mentions": 31,
+      "violence_mentions": 0,
       "victim_mentions": 0,
-      "war_crimes_mentions": 234
+      "war_crimes_mentions": 0
     }
   },
   "temporal_analysis": {
-    "hourly_distribution": {
-      "0": 324,
-      "23": 168,
-      "22": 40,
-      "21": 10,
-      "20": 2,
-      "18": 15,
-      "17": 33,
-      "16": 18,
-      "15": 3,
-      "14": 4,
-      "13": 4,
-      "11": 7,
-      "10": 26,
-      "8": 2,
-      "7": 3,
-      "4": 3,
-      "3": 2,
-      "12": 16,
-      "6": 3,
-      "5": 9,
-      "1": 2,
-      "19": 2,
-      "9": 4
-    },
-    "daily_distribution": {
-      "2026-07-04": 301,
-      "2026-07-03": 347,
-      "2026-07-02": 28,
-      "2026-07-01": 24
-    },
-    "peak_hours": [
-      "00:00 (324 tweets)",
-      "23:00 (168 tweets)",
-      "22:00 (40 tweets)"
-    ],
-    "peak_days": [
-      "2026-07-03 (347 tweets)",
-      "2026-07-04 (301 tweets)",
-      "2026-07-02 (28 tweets)"
-    ],
-    "total_time_span_days": 4
+    "hourly_distribution": {},
+    "daily_distribution": {},
+    "peak_hours": [],
+    "peak_days": [],
+    "total_time_span_days": 0
   },
   "geographic_analysis": {
     "top_locations": {},
@@ -173,123 +98,26 @@
   },
   "war_crimes_analysis": {
     "indicators": {
-      "civilian_casualties": 24,
-      "infrastructure_attacks": 1,
-      "settlement_activities": 1,
-      "humanitarian_violations": 4,
-      "children_casualties": 1,
-      "medical_attacks": 1,
+      "civilian_casualties": 0,
+      "infrastructure_attacks": 0,
+      "settlement_activities": 0,
+      "humanitarian_violations": 0,
+      "children_casualties": 0,
+      "medical_attacks": 0,
       "education_attacks": 0,
       "religious_site_attacks": 0
     },
-    "total_violations": 32,
-    "severity_score": 45.7,
-    "severity_level": "MEDIUM",
-    "violations_per_thousand_tweets": 45.71
+    "total_violations": 0,
+    "severity_score": 0.0,
+    "severity_level": "LOW",
+    "violations_per_thousand_tweets": 0.0
   },
   "representative_examples": {
     "most_critical": [],
     "civilian_casualties": [],
-    "infrastructure_attacks": [
-      {
-        "text": "Continuation of Israeli bombing on the Gaza Strip amid deteriorating health system, details with Al Jazeera correspondent Nour Abu Rokba https://t.co/SiujBeNtnY",
-        "location": "Unknown",
-        "relevance_score": 45,
-        "is_critical": true,
-        "keywords": [
-          "bombing"
-        ],
-        "engagement": {
-          "retweets": 0,
-          "likes": 0
-        }
-      }
-    ],
-    "war_crimes": [
-      {
-        "text": "RT @grok: @Parodyjeffx I stated that Israel and the US are committing genocide in Gaza, citing ICJ provisional measures, UN reports on star…",
-        "location": "Unknown",
-        "relevance_score": 45,
-        "is_critical": true,
-        "keywords": [
-          "genocide"
-        ],
-        "engagement": {
-          "retweets": 14,
-          "likes": 0
-        }
-      },
-      {
-        "text": "RT @GBC_Press: 🚨 BREAKING:\n\n​The United Nations has officially declared Gaza a genocide zone, noting that Israel is deliberately targeting…",
-        "location": "Unknown",
-        "relevance_score": 45,
-        "is_critical": true,
-        "keywords": [
-          "genocide"
-        ],
-        "engagement": {
-          "retweets": 6450,
-          "likes": 0
-        }
-      },
-      {
-        "text": "RT @SpencerGuard: Exactly. There is no genocide in Gaza, actually the opposite. Israel has taken extraordinary measures to prevent civilian…",
-        "location": "Unknown",
-        "relevance_score": 45,
-        "is_critical": true,
-        "keywords": [
-          "genocide"
-        ],
-        "engagement": {
-          "retweets": 745,
-          "likes": 0
-        }
-      }
-    ],
-    "high_engagement": [
-      {
-        "text": "RT @PopBase: Palestinian goalkeeper Salim Al-Ashqar has been killed by Israeli forces in Gaza. \n\nHe leaves behind his wife of 5 months who…",
-        "location": "Unknown",
-        "relevance_score": 55,
-        "is_critical": true,
-        "keywords": [
-          "killed",
-          "Israeli forces"
-        ],
-        "engagement": {
-          "retweets": 87615,
-          "likes": 0
-        }
-      },
-      {
-        "text": "RT @PopBase: Palestinian goalkeeper Salim Al-Ashqar has been killed by Israeli forces in Gaza. \n\nHe leaves behind his wife of 5 months who…",
-        "location": "Unknown",
-        "relevance_score": 55,
-        "is_critical": true,
-        "keywords": [
-          "killed",
-          "Israeli forces"
-        ],
-        "engagement": {
-          "retweets": 87615,
-          "likes": 0
-        }
-      },
-      {
-        "text": "RT @PopBase: Palestinian goalkeeper Salim Al-Ashqar has been killed by Israeli forces in Gaza. \n\nHe leaves behind his wife of 5 months who…",
-        "location": "Unknown",
-        "relevance_score": 55,
-        "is_critical": true,
-        "keywords": [
-          "killed",
-          "Israeli forces"
-        ],
-        "engagement": {
-          "retweets": 87615,
-          "likes": 0
-        }
-      }
-    ]
+    "infrastructure_attacks": [],
+    "war_crimes": [],
+    "high_engagement": []
   },
   "dashboard_config": {
     "update_interval": 60000,
