@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "processing_timestamp": "2026-08-18T06:25:30.298934",
+    "processing_timestamp": "2026-08-18T12:24:13.847393",
     "original_file_size_mb": 0.005272865295410156,
     "original_tweets_count": 0,
     "processing_version": "1.0",
@@ -18,14 +18,14 @@
     "total_likes": 0,
     "avg_engagement": 0.0,
     "extraction_info": {
-      "timestamp": "2026-08-18T06:25:30.239926",
+      "timestamp": "2026-08-18T12:24:13.783649",
       "total_tweets": 0,
       "budget_used": 0.0,
       "budget_allocated": 2.0,
       "requests_made": 0,
       "max_requests": 2000,
       "cost_per_tweet": 1e-06,
-      "extraction_duration": "0:00:02.334746",
+      "extraction_duration": "0:00:01.779572",
       "tweets_per_dollar": 0.0,
       "target_region": "Palestine/Israel"
     },
